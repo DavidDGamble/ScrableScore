@@ -16,6 +16,8 @@ _This is a basic C# program with only backend code that can take a word as a str
 ## Setup/Installation Requirements
 
 * _Clone the repository to your desktop https://github.com/DavidDGamble/ScrableScore.git_
+* _Navigate to the ScrableScore repository in the root ScrableScore repository._
+* _run [$ dotnet run] in terminal._
 
 ## Known Bugs
 

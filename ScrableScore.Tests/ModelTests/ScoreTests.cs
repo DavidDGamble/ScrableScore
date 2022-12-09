@@ -11,17 +11,15 @@ namespace ScrableScore.Test
     public void SplitWord_SplitsWordIntoList_CharArray()
     {
       char[] expected = new char[] { 't', 'e', 's', 't' };
-      Score testScore = new Score();
-      CollectionAssert.AreEqual(expected, testScore.SplitWord("test"));
+      CollectionAssert.AreEqual(expected, Score.SplitWord("test"));
     }
 
     [TestMethod]
-    public void valueScore_CalculatesScoreForString_int()
+    public void ValueScore_CalculatesScoreForString_int()
     {
       char[] test = new char[] { 't', 'e', 's', 't' };
-      Score testScore = new Score();
       int score = 4;
-      Assert.AreEqual(score, testScore.valueScore(test));
+      Assert.AreEqual(score, Score.ValueScore(test));
     }
   }
 }

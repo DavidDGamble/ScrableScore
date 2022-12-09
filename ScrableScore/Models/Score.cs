@@ -5,7 +5,7 @@ namespace ScrableScore.Models
 {
   public class Score
   {
-    private Dictionary<char, int> scoreKey = new Dictionary<char, int>()
+    private static Dictionary<char, int> scoreKey = new Dictionary<char, int>()
     {
       {'a', 1},
       {'e', 1},
@@ -35,13 +35,13 @@ namespace ScrableScore.Models
       {'z', 10}
     };
 
-    public char[] SplitWord(string input)
+    public static char[] SplitWord(string input)
     {
       char[] splitInput = input.ToCharArray();
       return splitInput;
     }
 
-    public int valueScore(char[] splitInput)
+    public static int ValueScore(char[] splitInput)
     {
       int score = 0;
       foreach(char element in splitInput)
